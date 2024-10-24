@@ -13,7 +13,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(), // Use history mode
+  history: createWebHistory('/Graceville/'), // Use history mode
   routes,
 });
 
