@@ -19,7 +19,7 @@ const open = ref(false);
         <div class="w-full h-16 wrapping flex items-center justify-between">
             <div class="flex items-center gap-2">
                 <i class="bx bx-envelope text-xl text-[#CEDD71]"></i>
-                <span class="text-sm text-[#CEDD71]">mail@gracevilleschools.org</span>
+                <span class="hidden lg:flex text-sm text-[#CEDD71]">mail@gracevilleschools.org</span>
             </div>
 
             <div class="flex items-center gap-2">
@@ -36,20 +36,20 @@ const open = ref(false);
 
         <div class="w-full h-20 wrapping flex items-center justify-between relative">
             <div class="flex items-center gap-2">
-                <img class="w-16 object-contain" src="../../assets/images/GR GENERAL LOGO 1.png" alt="logo"/>
-                <p class="text-[#CEDD71] font-semibold">Graceville International<br/> Schools</p>
+                <img class="w-8 lg:w-16 object-contain" src="../../assets/images/GR GENERAL LOGO 1.png" alt="logo"/>
+                <p class="text-[#CEDD71] font-bold text-xs lg:font-semibold">Graceville International<br/> Schools</p>
             </div>
 
             <button @click="open = !open" class="btn p-2 rounded-lg lg:hidden">
                 <i :class="open ? 'bx-x' : 'bx-menu'" class="bx text-[#CEDD71] text-2xl"></i>
             </button>
 
-            <ul :class="open ? 'py-4 border-[#CEDD71]' : 'h-0 border-transparent'" class="w-full overflow-hidden bg-gray text-white px-4 flex flex-col gap-4 lg:flex-row lg:h-fit lg:w-fit lg:gap-8 absolute top-20 left-0 z-30 lg:static border-t-2 lg:border-none trans">
+            <ul :class="open ? 'py-4 border-[#CEDD71]' : 'h-0 border-transparent'" class="w-full overflow-hidden bg-black text-white px-4 flex flex-col gap-4 lg:flex-row lg:h-fit lg:w-fit lg:gap-8 absolute top-20 left-0 z-30 lg:static border-t-2 lg:border-none trans">
                 <li>
                 <RouterLink to="/" class="link-container">Home</RouterLink>
                 </li>
                 <li>
-                <RouterLink to="/ourschool"  class="link-container">Ourschool</RouterLink>
+                <RouterLink to="/our"  class="link-container">Ourschool</RouterLink>
                 </li>
                 <li>
                 <RouterLink to="/ourschool"  class="link-container">About Us</RouterLink>

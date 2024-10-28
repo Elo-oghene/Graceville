@@ -7,13 +7,13 @@ import Ourschool from '../components/landing/Ourschool.vue'; // Corrected the im
 
 const routes = [
   { path: '/', component: Home },
-  { path: '/ourschool', component: Ourschool },
+  { path: '/our', component: Ourschool },
   // { path: '/admission', component: Admission },
   // Add more routes as needed
 ];
 
 const router = createRouter({
-  history: createWebHistory('/Graceville/'), // Use history mode
+  history: createWebHistory(), // Use history mode
   routes,
 });
 
