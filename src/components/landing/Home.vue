@@ -228,7 +228,7 @@ defineOptions({
 
         <section class="w-full h-[700px] bg-gray-500 bg-cover relative bg-[url('/src/assets/images/library.jpg')]">
             <div class="absolute inset-0 bg-[rgba(0,0,0,0.7)] flex flex-col gap-4 items-center justify-center">
-                <p class="text-white text-lg tracking-widest">INTERESTED IN JOINING US?</p>
+                <p class="text-white text-xs lg:text-lg tracking-widest">INTERESTED IN JOINING US?</p>
                 <div class="text-center leading-none">
                     <h1 class="text-white text-[60px] font-cormorant">Join Us For Information About New</h1>
                     <h1 class="text-white text-[60px] font-cormorant">Student Admissions</h1>
