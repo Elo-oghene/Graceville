@@ -101,7 +101,7 @@ defineOptions({
         <section class="w-full flex flex-col lg:flex-row bg-black px-4">
             <div class="hidden w-full lg:w-1/2 lg:flex flex-col justify-center gap-3">
                 <p class="text-[#CEDD71] tracking-wider">GET STARTED TODAY</p>
-                <div class="text-[20px] lg:text-[60px] text-white fle flex-col font-cormorant leading-24">
+                <div class="text-[20px] leading-none lg:text-[60px] text-white flex flex-col font-cormorant leading-24">
                     <div>Kickstart Your Child's</div>
                     <div class="text-white">Future with us.</div>
                 </div>
@@ -109,13 +109,13 @@ defineOptions({
             <!-- small screen -->
             <div class="w-full lg:w-1/2 h-[200px] flex lg:hidden flex-col justify-center gap-3">
                 <p class="text-[#CEDD71] tracking-wider">GET STARTED TODAY</p>
-                <div class="text-[20px] lg:text-[60px] text-white fle flex-col font-cormorant leading-24">
+                <div class="text-[30px] leading-none lg:text-[60px] text-white fle flex-col font-cormorant leading-24">
                     <div>Kickstart Your Child's</div>
                     <div class="text-white">Future with us.</div>
                 </div>
             </div>
             <div class="w-full lg:w-1/2 flex flex-wrap">
-                <div class="w-full lg:w-1/2 bg-[#224E05] flex flex-col px-8 gap-3 justify-center lg:mt-6">
+                <div class="w-full lg:w-1/2 h-[250px] bg-[#224E05] flex flex-col px-8 gap-3 justify-center lg:mt-6">
                     <h4 class="text-[24px] text-white font-cormorant">Apply Now</h4>
                     <p class="text-white font-serif">Admission into all our currently ongoing, please click here to apply now.</p>
                     <button class="self-start px-4 py-3 bg-black text-sm text-white rounded-sm shadow-md tracking-wider hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">CLICK HERE</button>
@@ -130,7 +130,7 @@ defineOptions({
                         <img src="../../assets/images/kiddies3.png" class="w-full h-full" alt="">
                     </div>
                 </div>
-                <div class="w-full lg:w-1/2 bg-red-500 lg:mb-2 flex flex-col px-8 gap-3 justify-center">
+                <div class="w-full lg:w-1/2 h-[250px] bg-red-500 lg:mb-2 flex flex-col px-8 gap-3 justify-center">
                     <h4 class="text-[24px] text-white font-cormorant">Contact Us</h4>
                     <p class="text-white font-serif">Admission into all our currently ongoing, please click here to apply now.</p>
                     <button class="self-start px-4 py-3 bg-black text-sm text-white rounded-sm shadow-md tracking-wider hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">CLICK HERE</button>
