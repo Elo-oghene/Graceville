@@ -57,7 +57,7 @@ defineOptions({
                     Admission into Graceville College (Day Secondary School)
                 </div>
                 <p class="text-white text-center md:text-left">
-                    Graceville College Enrollment into Graceville College for the academic session commences with the entrance examination that usually holds early in May of the proceeding session. Separate examination dates are arranged for students wishing to transfer into JS2 and SS2 (please contact the school)Admission into Graceville International Schools (Jesus Saves) and Graceville International Schools (Summit Road) is open all year round. However, children will be tested and age considered in determining the appropriate class for admission.
+                    Graceville CollegeEnrollment into Graceville College for the academic session commences with theentrance examination that usually holds early in May of the proceeding session.Separate examination dates are arranged for students wishing to transfer into JS2 andSS2 (please contact the school)Admission into Graceville International Schools (Jesus Saves) and Graceville International Schools (Summit Road) is open all year round. However, children will be tested and age considered in determining the appropriate class for admission.
                 </p>
                 <div class="flex flex-col gap-2">
                     <div class="text-[#CEDD71] text-center md:text-left">HOW TO REGISTER</div>
@@ -88,7 +88,7 @@ defineOptions({
                     Admission into Graceville College (Day Secondary School)
                 </div>
                 <p class="text-white text-center md:text-left">
-                    Graceville College Enrollment into Graceville College for the academic session commences with the entrance examination that usually holds early in May of the proceeding session. Separate examination dates are arranged for students wishing to transfer into JS2 and SS2 (please contact the school)Admission into Graceville International Schools (Jesus Saves) and Graceville International Schools (Summit Road) is open all year round. However, children will be tested and age considered in determining the appropriate class for admission.
+                    Graceville CollegeEnrollment into Graceville College for the academic session commences with theentrance examination that usually holds early in May of the proceeding session.Separate examination dates are arranged for students wishing to transfer into JS2 andSS2 (please contact the school)Admission into Graceville International Schools (Jesus Saves) and Graceville International Schools (Summit Road) is open all year round. However, children will be tested and age considered in determining the appropriate class for admission.
                 </p>
                 <div class="flex flex-col gap-2">
                     <div class="text-[#CEDD71] text-center md:text-left">HOW TO REGISTER</div>

@@ -298,9 +298,9 @@ defineOptions({
 
             </div>
         </section>
-        <section>
+        <!-- <section>
             <Footer />
-        </section>
+        </section> -->
     </main>
 </template>
 <style>
