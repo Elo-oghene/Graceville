@@ -4,6 +4,7 @@ import Home from '../components/landing/Home.vue'; // Adjust the path as necessa
 import Ourschool from '../components/landing/Ourschool.vue'; // Corrected the import statement
 import Contact from '../components/landing/Contact.vue'
 import Admission from '@/components/landing/Admission.vue';
+import About from '../components/landing/About.vue'
 // import About from '../components/landing/About.vue'; // Example component
 // import Admission from '../components/landing/Admission.vue'; // Example component
 
@@ -12,6 +13,7 @@ const routes = [
   { path: '/our', component: Ourschool },
   { path: '/contact', component: Contact },
   { path: '/admission', component: Admission },
+  { path: '/about', component: About },
   // { path: '/admission', component: Admission },
   // Add more routes as needed
 ];

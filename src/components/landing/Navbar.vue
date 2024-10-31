@@ -53,7 +53,7 @@ const subMenuOpen = ref(false);
                 <RouterLink to="/our"  class="link-container">Ourschool</RouterLink>
                 </li>
                 <li>
-                <RouterLink to="/ourschool"  class="link-container">About Us</RouterLink>
+                <RouterLink to="/about"  class="link-container">About Us</RouterLink>
                 </li>
                 <li>
                 <RouterLink to="/admission"  class="link-container">Admission</RouterLink>
