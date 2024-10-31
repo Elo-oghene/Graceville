@@ -1,6 +1,8 @@
 <script setup>
 import Layout from './Layout.vue';
 import Footer from '../footer/Footer.vue'
+import Reusable from './Reusable.vue';
+import academic from '../../assets/images/academic-block.jpg'
 
 defineOptions({
     layout: Layout
@@ -13,22 +15,21 @@ defineOptions({
         <title>Graceville International Schools</title>
     </Head>
     <main class="w-full mt-[100px]">
-        <div class="w-full h-[500px] lg:h-full relative z-10">
-            <img src="../../assets/images/academic-block.jpg" class="w-full h-full bg-cover" alt="Building Image">
-            <div class="absolute inset-0 bg-black opacity-50"></div>
-        </div>
-        <div class="absolute top-44 lg:top-52 left-4 lg:left-10 flex flex-col pt-10 gap-2 lg:gap-4 z-10">
-            <p class="text-xs lg:text-lg text-white tracking-widest">WELCOME TO OUR OFFICIAL WEBSITE</p>
-            <div class="text-[30px] leading-none lg:text-[80px] text-white font-cormorant"> 
-                <h1>GRACEVILLE</h1>
-                <h1>GROUP OF SCHOOLS</h1>
-            </div>
-            <p class="text-white text-xs lg:text-sm md:text-sm font-serif tracking-wider">Thanks so much for visiting, we are delighted that you are interested in our schools and also at enrolling your child.</p>
-            <div class="flex flex-col lg:flex-row gap-4 pt-4 lg:gap-16">
-                <button class="self-start px-4 py-3 bg-[#CEDD71] text-sm rounded-sm shadow-md hover:bg-[#b0cc63] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">APPLY FOR ADMISSION</button>
-                <button class="self-start px-4 py-3 bg-[#CEDD71] text-sm rounded-sm shadow-md hover:bg-[#b0cc63] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">PARENT LOGIN</button>
-            </div>
-        </div>
+        <section>
+            <Reusable
+                :imageSrc="academic"
+                imageAlt="Academic Building"
+                overlayOpacity="0.6"
+                welcomeText="WELCOME TO OUR OFFICIAL WEBSITE"
+                title="GRACE VILLE"
+                title2="GROUP OF SCHOOLS"
+                description="Thanks so much for visiting, we are delighted that you are interested in our schools and also at enrolling your child."
+                :buttons="[
+                    { label: 'APPLY FOR ADMISSION', onClick: handleApply },
+                    { label: 'PARENT LOGIN', onClick: handleLogin }
+                ]"
+            />
+        </section>
 
         <section class="w-full flex flex-col lg:flex-row items-center justify-center bg-black pt-10 pb-4">
             <div class="w-[90%] flex flex-col lg:flex-row justify-between gap-6">
