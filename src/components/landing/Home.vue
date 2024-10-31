@@ -20,8 +20,8 @@ defineOptions({
         <div class="absolute top-44 lg:top-52 left-4 lg:left-10 flex flex-col pt-10 gap-2 lg:gap-4 z-10">
             <p class="text-xs lg:text-lg text-white tracking-widest">WELCOME TO OUR OFFICIAL WEBSITE</p>
             <div class="text-[30px] leading-none lg:text-[80px] text-white font-cormorant"> 
-                <h1>Graceville</h1>
-                <h1>Group Of School</h1>
+                <h1>GRACEVILLE</h1>
+                <h1>GROUP OF SCHOOLS</h1>
             </div>
             <p class="text-white text-xs lg:text-sm md:text-sm font-serif tracking-wider">Thanks so much for visiting, we are delighted that you are interested in our schools and also at enrolling your child.</p>
             <div class="flex flex-col lg:flex-row gap-4 pt-4 lg:gap-16">
