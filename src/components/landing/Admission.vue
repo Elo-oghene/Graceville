@@ -28,7 +28,7 @@ defineOptions({
         <section class="w-full flex flex-col md:flex-row items-center bg-black">
             <div class="w-full md:w-1/2 h-64 md:h-full">
                 <div class="w-full h-full">
-                    <img src="/Users/mac/Documents/gracevilll/graceville/src/assets/images/kiddies7.jpg" class="w-full h-full object-cover" alt="">
+                    <img src="../../assets/images/kiddies7.jpg" class="w-full h-full object-cover" alt="">
                 </div>
             </div>
             <div class="w-full md:w-1/2 flex flex-col px-4 py-4 gap-4">
@@ -72,7 +72,7 @@ defineOptions({
             </div>
             <div class="w-full md:w-1/2 h-64 md:h-full">
                 <div class="w-full h-full">
-                    <img src="/Users/mac/Documents/gracevilll/graceville/src/assets/images/kiddies8.png" class="w-full h-full object-cover" alt="">
+                    <img src="../../assets/images/kiddies8.png" class="w-full h-full object-cover" alt="">
                 </div>
             </div>
         </section>
@@ -80,7 +80,7 @@ defineOptions({
         <section class="w-full lg:hidden flex flex-col md:flex-row items-center bg-black">
             <div class="w-full md:w-1/2 h-64 md:h-full">
                 <div class="w-full h-full">
-                    <img src="/Users/mac/Documents/gracevilll/graceville/src/assets/images/kiddies8.png" class="w-full h-full object-cover" alt="">
+                    <img src="../../assets/images/kiddies8.png" class="w-full h-full object-cover" alt="">
                 </div>
             </div>
             <div class="w-full md:w-1/2 flex flex-col px-4 py-4 gap-4">
