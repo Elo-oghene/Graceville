@@ -5,6 +5,8 @@ import Ourschool from '../components/landing/Ourschool.vue'; // Corrected the im
 import Contact from '../components/landing/Contact.vue'
 import Admission from '@/components/landing/Admission.vue';
 import About from '../components/landing/About.vue'
+import Login from '../components/auth/Login.vue'
+import Studentsystem from '../components/auth/Studentsystem.vue'
 // import About from '../components/landing/About.vue'; // Example component
 // import Admission from '../components/landing/Admission.vue'; // Example component
 
@@ -14,6 +16,8 @@ const routes = [
   { path: '/contact', component: Contact },
   { path: '/admission', component: Admission },
   { path: '/about', component: About },
+  { path: '/login', component: Login },
+  { path: '/studentsystem', component: Studentsystem },
   // { path: '/admission', component: Admission },
   // Add more routes as needed
 ];

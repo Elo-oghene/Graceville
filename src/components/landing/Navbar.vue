@@ -59,7 +59,7 @@ const subMenuOpen = ref(false);
                 <RouterLink to="/admission"  class="link-container">Admission</RouterLink>
                 </li>
                 <li>
-                <RouterLink to="/ourschool"  class="link-container">Entrance Exam Results</RouterLink>
+                <RouterLink to="/"  class="link-container">Entrance Exam Results</RouterLink>
                 </li>
                 <li>
                 <RouterLink to="/contact"  class="link-container">Contact us</RouterLink>
@@ -116,7 +116,7 @@ const subMenuOpen = ref(false);
                     <RouterLink to="/admission" class="link-container">Admission</RouterLink>
                 </li>
                 <li v-if="!subMenuOpen || open">
-                    <RouterLink to="/results" class="link-container">Entrance Exam Results</RouterLink>
+                    <RouterLink to="/" class="link-container">Entrance Exam Results</RouterLink>
                 </li>
                 <li v-if="!subMenuOpen || open">
                     <RouterLink to="/contact" class="link-container">Contact Us</RouterLink>
