@@ -1,5 +1,4 @@
 <script setup>
-// import { computed } from 'vue';
 import { useRoute } from 'vue-router';
 import Navbar from './components/landing/Navbar.vue';
 
