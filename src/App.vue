@@ -1,11 +1,12 @@
-<script setup>
+<!-- <script setup>
+import { computed } from 'vue';
 import { useRoute } from 'vue-router';
 import Navbar from './components/landing/Navbar.vue';
 
 const route = useRoute();
 
-// const isLoginPage = computed(() => route.path === '/login');
-// const isStudentSystemPage = computed(() => route.path === '/studentsystem');
+const isLoginPage = computed(() => route.path === '/login');
+const isStudentSystemPage = computed(() => route.path === '/studentsystem');
 </script>
 
 <template>
@@ -15,10 +16,10 @@ const route = useRoute();
     </header>
     <router-view></router-view>
   </div>
-</template>
+</template> -->
 
 
-<!-- <script setup>
+<script setup>
 import { computed } from 'vue';
 import { useRoute } from 'vue-router';
 import Navbar from './components/landing/Navbar.vue';
@@ -36,4 +37,4 @@ const isStudentSystemPage = computed(() => route.path === '/studentsystem');
     </header>
     <router-view></router-view>
   </div>
-</template> -->
+</template>
