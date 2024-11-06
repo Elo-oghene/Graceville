@@ -49,9 +49,34 @@ const subMenuOpen = ref(false);
                 <li>
                 <RouterLink to="/" class="link-container">Home</RouterLink>
                 </li>
-                <li>
-                <RouterLink to="/our"  class="link-container">Ourschool</RouterLink>
+                <li @click="subMenuOpen = !subMenuOpen" class="relative lg:static">
+                    <div class="mt-1 link-container cursor-pointer">
+                        Our School
+                        <i :class="subMenuOpen ? 'bx-chevron-up' : 'bx-chevron-down'" class="bx text-[#CEDD71] text-xs"></i>
+                    </div>
+
+                    <!-- Nested Submenu -->
+                    <ul v-if="subMenuOpen" 
+                        class="submenu flex flex-col gap-1 bg-black text-white lg:absolute lg:top-full lg:w-48  lg:shadow-lg transition-all duration-300 ease-in-out">
+                        
+                        <li>
+                            <RouterLink to="/our/history" class="link-container block py-2 px-4 rounded">GracevilleGRA</RouterLink>
+                        </li>
+                        
+                        <li>
+                            <RouterLink to="/our/mission" class="link-container block py-2 px-4 rounded">Preschool and Primary School</RouterLink>
+                        </li>
+                        
+                        <li>
+                            <RouterLink to="/our/team" class="link-container block py-2 px-4 rounded">Secondary School</RouterLink>
+                        </li>
+                        
+                        <li>
+                            <RouterLink to="/our/team" class="link-container block py-2 px-4 rounded">Pre-University</RouterLink>
+                        </li>
+                    </ul>
                 </li>
+
                 <li>
                 <RouterLink to="/about"  class="link-container">About Us</RouterLink>
                 </li>
@@ -116,7 +141,7 @@ const subMenuOpen = ref(false);
                     <RouterLink to="/admission" class="link-container">Admission</RouterLink>
                 </li>
                 <li v-if="!subMenuOpen || open">
-                    <RouterLink to="/" class="link-container">Entrance Exam Results</RouterLink>
+                    <RouterLink to="" class="link-container">Entrance Exam Results</RouterLink>
                 </li>
                 <li v-if="!subMenuOpen || open">
                     <RouterLink to="/contact" class="link-container">Contact Us</RouterLink>
