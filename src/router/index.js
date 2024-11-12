@@ -7,6 +7,8 @@ import Admission from '@/components/landing/Admission.vue';
 import About from '../components/landing/About.vue'
 import Login from '../components/auth/Login.vue'
 import Studentsystem from '../components/auth/Studentsystem.vue'
+import Systemfirstsight from '../components/auth/Systemfirstsight.vue'
+import Sectionterm from '../components/auth/Sectionterm.vue'
 // import About from '../components/landing/About.vue'; // Example component
 // import Admission from '../components/landing/Admission.vue'; // Example component
 
@@ -18,6 +20,8 @@ const routes = [
   { path: '/about', component: About },
   { path: '/login', component: Login },
   { path: '/studentsystem', component: Studentsystem },
+  { path: '/systemfirstsight', component: Systemfirstsight},
+  { path: '/sectionterm', component: Sectionterm},
   // { path: '/admission', component: Admission },
   // Add more routes as needed
 ];

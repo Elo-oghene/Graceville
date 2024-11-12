@@ -28,11 +28,13 @@ const route = useRoute();
 
 const isLoginPage = computed(() => route.path === '/login');
 const isStudentSystemPage = computed(() => route.path === '/studentsystem');
+const isSystemFirstSight = computed(() => route.path === '/systemfirstsight');
+const isSectionTerm = computed(() => route.path === '/sectionterm');
 </script>
 
 <template>
   <div>
-    <header v-if="!isLoginPage && !isStudentSystemPage">
+    <header v-if="!isLoginPage && !isStudentSystemPage && !isSystemFirstSight && !isSectionTerm">
       <Navbar/>
     </header>
     <router-view></router-view>

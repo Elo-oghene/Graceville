@@ -1,14 +1,36 @@
 <script setup>
 import { ref } from 'vue';
+const menuOpen = ref(false); // State variable to manage the nested list visibility
 const attendanceOpen = ref(false); // State variable to manage the nested list visibility
 const timetableOpen = ref(false); // State variable to manage the nested list visibility
+const schoolFeesOpen = ref(false); // State variable to manage the nested list visibility
+const healthUpdateOpen = ref(false); // State variable to manage the nested list visibility
+const termScheduleOpen = ref(false); // State variable to manage the nested list visibility
+const testExamOpen = ref(false); // State variable to manage the nested list visibility
 const backgroundColor = ref('bg-white'); // Initial background color
+const selectedYear = '';
 
+const togglemenuOpen = () => {
+    menuOpen.value = !menuOpen.value; // Toggle the visibility
+    console.log("open")
+};
 const toggleAttendance = () => {
     attendanceOpen.value = !attendanceOpen.value; // Toggle the visibility
 };
 const toggleTimetable = () => {
     timetableOpen.value = !timetableOpen.value; // Toggle the visibility
+};
+const toggleSchoolfees = () => {
+    schoolFeesOpen.value = !schoolFeesOpen.value; // Toggle the visibility
+};
+const toggleHealthUpdate = () => {
+    healthUpdateOpen.value = !healthUpdateOpen.value; // Toggle the visibility
+};
+const toggleTermSchedule = () => {
+    termScheduleOpen.value = !termScheduleOpen.value; // Toggle the visibility
+};
+const toggleTestExam = () => {
+    testExamOpen.value = !testExamOpen.value; // Toggle the visibility
 };
 
 const changeColor = () => {
@@ -35,10 +57,7 @@ const changeColor = () => {
             </div>
         </div>
         <div class="w-full bg-[#CEDD71] h-[2px]"></div>
-        <section class="flex justify-between items-center pt-4 px-4 lg:px-16">
-            <div class="lg:hidden flex">
-                <i class='bx bx-menu text-[24px]'></i>
-            </div>
+        <section class="flex justify-between lg:px-16 pt-4 px-4">
             <div>
                 <div class="w-40 sm:w-52">
                 <img class="w-full object-contain" src="../../assets/images/logo.png" alt="logo"/>
@@ -70,7 +89,7 @@ const changeColor = () => {
                 </div>
             </div>
 
-            <div class="w-full flex flex-col gap-3">
+            <div class="w-full h-[400px] flex flex-col gap-3">
                 <div class="w-full flex flex-col lg:flex-row">
                     <label class="w-full lg:w-[16%] flex items-center text-sm lg:text-[16px]">OTHER NAMES</label>
                     <div  class="w-full lg:w-[84%] h-[50px] border-2 border-[#224E05] px-4 flex items-center bg-[#F5F9DA]">fghvbjnkml,;.</div>
@@ -93,6 +112,7 @@ const changeColor = () => {
                 </div>
             </div>
         </section>
+        <!-- student report -->
         <section class="w-full px-4 lg:px-16 mt-10">
             <div>STUDENTS PROGRESS REPORT</div>
             <ul class="w-full flex flex-col mt-4 gap-4">
@@ -100,11 +120,11 @@ const changeColor = () => {
                     <span class="px-4 lg:px-8 text-sm lg:text-[16px] text-white">ATTENDANCE</span>
                     <i :class="attendanceOpen ? 'bx bx-chevron-up' : 'bx bx-chevron-down'" class="text-white text-[30px]"></i> <!-- Icon for toggling -->
                 </li>
-                <div v-if="attendanceOpen" class="w-full flex gap-4 flex-col"> <!-- Nested list -->
+                <div v-if="attendanceOpen" class="w-full flex gap-4 flex-col"> <!-- Nested  -->
                     <div class="flex gap-4 lg:gap-10 items-center justify-center">
                         <div class="flex flex-col gap-2">
                             <div @click="changeColor" class="text-center text-sm">TOTAL</div>
-                            <div class="w-14 h-14  shadow-lg  rounded-lg flex items-center justify-center">189</div>
+                            <div class="w-14 h-14 shadow-lg  rounded-lg flex items-center justify-center">189</div>
                         </div>
                         <div class="flex flex-col gap-2">
                             <div class="text-center text-sm">PRESENT</div>
@@ -121,137 +141,75 @@ const changeColor = () => {
                     <span class="px-4 lg:px-8 text-sm lg:text-[16px] text-white">TIMETABLE</span>
                     <i :class="timetableOpen ? 'bx bx-chevron-up' : 'bx bx-chevron-down'" class="text-white text-[30px]"></i> <!-- Icon for toggling -->
                 </li>
-                <div v-if="timetableOpen" class="w-full flex gap-4 flex-col"> <!-- Nested list -->
-                <div class="overflow-x-auto">
-                    <div class="w-full border px-4 py-2 tracking-wider text-center">Primary/foundational schools Time Table 2023-24,I,II,III</div>
-                    <div class="w-full border px-4 py-2 tracking-wider ">School Name:</div>
-                    <div class="w-full border px-4 py-2 flex justify-around">
-                        <div>First Bell</div>
-                        <div>Second Bell</div>
-                        <div>School Assesment</div>
+                <div v-if="timetableOpen" class="w-full"> <!-- Nested list -->
+                    <img src="../../assets/images/table.png" class="w-full" alt="images goes here">
+                </div>
+                <li class="w-full h-14 bg-[#224E05] flex items-center px-4 lg:px-8 justify-between cursor-pointer" @click="toggleSchoolfees">
+                    <span class="px-4 lg:px-8 text-sm lg:text-[16px] text-white">SCHOOLFEES</span>
+                    <i :class="schoolFeesOpen ? 'bx bx-chevron-up' : 'bx bx-chevron-down'" class="text-white text-[30px]"></i> <!-- Icon for toggling -->
+                </li>
+                <div v-if="schoolFeesOpen" class="w-full"> <!-- Nested list -->
+                    <img src="../../assets/images/schoolfees.png" class="w-full" alt="">
+                </div>
+                <li class="w-full h-14 bg-[#224E05] flex items-center px-4 lg:px-8 justify-between cursor-pointer" @click="toggleHealthUpdate">
+                    <span class="px-4 lg:px-8 text-sm lg:text-[16px] text-white">HEALTHUPDATE</span>
+                    <i :class="healthUpdateOpen ? 'bx bx-chevron-up' : 'bx bx-chevron-down'" class="text-white text-[30px]"></i> <!-- Icon for toggling -->
+                </li>
+                <div v-if="healthUpdateOpen" class="w-full"> <!-- Nested list -->
+                    <img src="../../assets/images/healthupdate.png" class="w-full" alt="">
+                </div>
+                <li class="w-full h-14 bg-[#224E05] flex items-center px-4 lg:px-8 justify-between cursor-pointer" @click="toggleTermSchedule">
+                    <span class="px-4 lg:px-8 text-sm lg:text-[16px] text-white">TERM SCHEDULE</span>
+                    <i :class="termScheduleOpen ? 'bx bx-chevron-up' : 'bx bx-chevron-down'" class="text-white text-[30px]"></i> <!-- Icon for toggling -->
+                </li>
+                <div v-if="termScheduleOpen" class="w-full flex gap-6 flex-col lg:px-52"> <!-- Nested list -->
+                    <div class="w-full flex gap-4 lg:gap-16 lg:items-center justify-between">
+                            <div class="w-6 h-6 bg-[#224E05] rounded-sm"></div>
+                            <div>1st Test</div>
+                        <div class="w-32 h-6 bg-[#224E05] rounded-lg"></div>
                     </div>
-                    <table class="w-full table-auto border-collapse border border-gray-300 rounded-lg shadow-lg">
-                        <thead>                       
-                        <tr class="bg-[#f5f9da] text-center">
-                            <th class="border px-4 py-2 text-left text-xs lg:text-sm">Week</th>
-                            <th class="border px-4 py-2 text-center lg:text-left text-xs lg:text-sm">
-                                <P>1st period</P>
-                                <p>(9:15 - 9:55)</p>
-                            </th>
-                            <th class="border px-4 py-2 text-center lg:text-left text-xs lg:text-sm">
-                                <P>1st period</P>
-                                <p>(9:55 - 10:30)</p>
-                            </th>
-                            <th class="text-xs lg:text-sm"></th>
-                            <th class="border px-4 py-2 text-center lg:text-left text-xs lg:text-sm">
-                                <P>1st period</P>
-                                <p>(10:45 - 11:20)</p>
-                            </th>
-                            <th class="border px-4 py-2 text-center lg:text-left text-xs lg:text-sm">
-                                <P>1st period</P>
-                                <p>(11:20 - 11:55)</p>
-                            </th>
-                            <th class=""></th>
-                            <th class="border px-4 py-2 text-center lg:text-left text-xs lg:text-sm">
-                                <P>1st period</P>
-                                <p>(12:55 - 1:30)</p>
-                            </th>
-                            <th class="border px-4 py-2 text-center lg:text-left text-xs whitespace"></th>
-                            <th class="border px-4 py-2 ttext-center lg:text-left text-xs lg:text-sm">
-                                <P>1st period</P>
-                                <p>(1:35 - 2:00)</p>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- First Time Slot -->
-                        <tr class="text-xs lg:text-sm">
-                            <td class="border px-4 py-2">MONDAY</td>
-                            <td class="border px-4 py-2">Maths</td>
-                            <td class="border px-4 py-2">Science</td>
-                            <td class="w-14 rotate-90 mt-20"></td>
-                            <td class="border px-4 py-2">History</td>
-                            <td class="border px-4 py-2">Art</td>
-                            <td class="w-14 rotate-90"></td>
-                            <td class="border px-4 py-2">Art</td>
-                            <td class="rotate-90"></td>
-                            <td class="border px-4 py-2">Art</td>
-                        </tr>
-                        <!-- Second Time Slot -->
-                        <tr class="text-xs lg:text-sm">
-                            <td class="border px-4 py-2">TUESDAY</td>
-                            <td class="border px-4 py-2">English</td>
-                            <td class="border px-4 py-2">Maths</td>
-                            <td class=""></td>
-                            <td class="border px-4 py-2">Art</td>
-                            <td class="border px-4 py-2">History</td>
-                            <td class="w-14 rotate-90"></td>
-                            <td class="border px-4 py-2">History</td>
-                            <td class="rotate-90"></td>
-                            <td class="border px-4 py-2">History</td>
-                        </tr>
-                        <!-- Third Time Slot -->
-                        <tr class="text-xs lg:text-sm">
-                            <td class="border px-4 py-2">WEDNESDAY</td>
-                            <td class="border px-4 py-2">History</td>
-                            <td class="border px-4 py-2">English</td>
-                            <td class="rotate-90 whitespace-nowrap text-lg font-semibold">Break</td>
-                            <td class="border px-4 py-2">Science</td>
-                            <td class="border px-4 py-2">Music</td>
-                            <td class="rotate-90 whitespace-nowrap text-lg font-semibold">Break</td>
-                            <td class="border px-4 py-2">Music</td>
-                            <td class="rotate-90 whitespace-nowrap text-lg font-semibold">Break</td>
-                            <td class="border px-4 py-2">Music</td>
-                        </tr>
-                        <!-- Break Period (Place in the Break Column) -->
-                        
-                        <!-- Fourth Time Slot -->
-                        <tr class="text-xs lg:text-sm">
-                            <td class="border px-4 py-2">THURSDAY</td>
-                            <td class="border px-4 py-2">Art</td>
-                            <td class="border px-4 py-2">History</td>
-                            <td class=""></td>
-                            <td class="border px-4 py-2">Maths</td>
-                            <td class="border px-4 py-2">Science</td>
-                            <td class="rotate-90"></td>
-                            <td class="border px-4 py-2">Science</td>
-                            <td class="w-14 rotate-90"></td>
-                            <td class="border px-4 py-2">Science</td>
-                        </tr>
-                        <!-- Fifth Time Slot -->
-                        <tr class="text-xs lg:text-sm">
-                            <td class="border px-4 py-2">FRIDAY</td>
-                            <td class="border px-4 py-2">Music</td>
-                            <td class="border px-4 py-2">Art</td>
-                            <td class=""></td>
-                            <td class="border px-4 py-2">English</td>
-                            <td class="border px-4 py-2">Maths</td>
-                            <td class="w-14 rotate-90"></td>
-                            <td class="border px-4 py-2">Maths</td>
-                            <td class=""></td>
-                            <td class="border px-4 py-2">Maths</td>
-                        </tr>
-                        <!-- Fifth Time Slot -->
-                        <tr class="text-xs lg:text-sm">
-                            <td class="border px-4 py-2">SATURDAY</td>
-                            <td class="border px-4 py-2">Music</td>
-                            <td class="border px-4 py-2">Art</td>
-                            <td class=""></td>
-                            <td class="border px-4 py-2">English</td>
-                            <td class="border px-4 py-2">Maths</td>
-                            <td class="w-14 rotate-90"></td>
-                            <td class="border px-4 py-2">Maths</td>
-                            <td class="w-14 rotate-90"></td>
-                            <td class="border px-4 py-2">Maths</td>
-                        </tr>
-                       
-                    </tbody>
-                    </table>
+                    <div class="flw-full flex gap-4 lg:gap-16 lg:items-center justify-between">
+                        <div class="w-6 h-6 bg-[#224E05] rounded-sm"></div>
+                        <div>2nd Test</div>
+                        <div class="w-32 h-6 bg-[#224E05] rounded-lg"></div>
+                    </div>
+                    <div class="w-full flex gap-4 lg:gap-16 lg:items-center justify-between">
+                        <div class="w-6 h-6 bg-[#224E05] rounded-sm"></div>
+                        <div>Parents Forum</div>
+                        <div class="w-32 h-6 bg-[#224E05] rounded-lg"></div>
+                    </div>
+                    <div class="w-full flex gap-4 lg:gap-16 lg:items-center justify-between">
+                        <div class="w-6 h-6 bg-[#224E05] rounded-sm"></div>
+                        <div>Examination</div>
+                        <div class="w-32 h-6 bg-[#224E05] rounded-lg"></div>
+                    </div>
                 </div>
+                <li class="w-full h-14 bg-[#224E05] flex items-center px-4 lg:px-8 justify-between cursor-pointer" @click="toggleTestExam">
+                    <span class="px-4 lg:px-8 text-sm lg:text-[16px] text-white">TEST AND EXAM</span>
+                    <i :class="testExamOpen ? 'bx bx-chevron-up' : 'bx bx-chevron-down'" class="text-white text-[30px]"></i> <!-- Icon for toggling -->
+                </li>
+                <div v-if="testExamOpen" class="w-full flex flex-col lg:flex-row lg:justify-center gap-4 px-4 lg:gap-16"> 
+                    <div class="px-4 py-1 rounded-sm bg-[#CEDD71]">Test Result</div>
+                    <div class="px-4 py-1 rounded-sm bg-[#CEDD71]">Exam result</div>
+                    <!-- <select name="year" class="px-4 py-2 bg-gray-200 rounded-lg shadow-md focus:outline-none transition duration-300 ease-in-out" id="">
+                        <option value="">year</option>
+                        <option value="">2013</option>
+                        <option value="">2014</option>
+                        <option value="">2015</option>
+                    </select>
+                    <select name="section" class="px-4 py-2 bg-gray-200 rounded-lg shadow-md focus:outline-none transition duration-300 ease-in-out" id="">
+                        <option value="">session</option>
+                        <option value="">2013</option>
+                        <option value="">2014</option>
+                        <option value="">2015</option>
+                    </select>
+                    <select name="Term" class="px-4 py-2 bg-gray-200 rounded-lg shadow-md focus:outline-none transition duration-300 ease-in-out" id="">
+                        <option value="">1st Term</option>
+                        <option value="">2nd Term</option>
+                        <option value="">3rd Term</option>
+                    </select> -->
                 </div>
-                <li class="w-full h-14 bg-[#224E05] flex items-center px-4 lg:px-8 text-sm lg:text-[16px] text-white">SCHOOL FEES</li>
-                <li class="w-full h-14 bg-[#224E05] flex items-center px-4 lg:px-8 text-sm lg:text-[16px] text-white">HEALTH UPDATE</li>
-                <li class="w-full h-14 bg-[#224E05] flex items-center px-4 lg:px-8 text-sm lg:text-[16px] text-white">TERM SCHEDULE</li>
+
                 <li class="w-full h-14 bg-[#224E05] flex items-center px-4 lg:px-8 text-sm lg:text-[16px] text-white">TEST AND EXAM</li>
                 <li class="w-full h-14 bg-[#224E05] flex items-center px-4 lg:px-8 text-sm lg:text-[16px] text-white">CHECK FINAL RESULT</li>
             </ul>
