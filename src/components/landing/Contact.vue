@@ -37,43 +37,43 @@ defineOptions({
                     <p class="text-white text-xs lg:text-sm md:text-sm font-serif tracking-wider">You can call us on phone, send us and email or visit any of our schools, 
                         we are looking forward to hearing from you</p>
                     <div class="flex flex-col lg:flex-row gap-4 pt-4 lg:gap-16">
-                        <button class="self-start px-4 py-3 bg-[#CEDD71] text-sm rounded-sm shadow-md hover:bg-[#b0cc63] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">APPLY FOR ADMISSION</button>
-                        <button class="self-start px-4 py-3 bg-[#CEDD71] text-sm rounded-sm shadow-md hover:bg-[#b0cc63] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">PARENT LOGIN</button>
+                        <button class="self-start px-4 py-3 bg-accent text-sm rounded-sm shadow-md hover:bg-[#b0cc63] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">APPLY FOR ADMISSION</button>
+                        <button class="self-start px-4 py-3 bg-accent text-sm rounded-sm shadow-md hover:bg-[#b0cc63] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">PARENT LOGIN</button>
                     </div>
                 </div>
             </div>
             <Adress/>
         </section>
 
-        <form action="" class="w-full bg-[#CEDD71] p-6 lg:p-10 rounded-md shadow-md">
+        <form action="" class="w-full bg-accent p-6 lg:p-10 rounded-md shadow-md">
             <h2 class="text-xl lg:text-2xl font-cormorant font-bold mb-6 text-center lg:text-left">Send Us a Message</h2>
 
             <!-- Name Field -->
             <div class="mb-4">
                 <label for="name" class="block  mb-1 lg:text-lg">Your Name</label>
                 <input type="text" id="name" name="name" required
-                    class="w-full px-3 py-2 border-2 bg-[#CEDD71] border-black rounded-md"/>
+                    class="w-full px-3 py-2 border-2 bg-accent border-black rounded-md"/>
             </div>
 
             <!-- Email Field -->
             <div class="mb-4">
                 <label for="email" class="block mb-1 lg:text-lg">Your Email</label>
                 <input type="email" id="email" name="email" required
-                    class="w-full px-3 py-2 border-2 bg-[#CEDD71] border-black rounded-md"/>
+                    class="w-full px-3 py-2 border-2 bg-accent border-black rounded-md"/>
             </div>
 
             <!-- Subject Field -->
             <div class="mb-4">
                 <label for="subject" class="block mb-1 lg:text-lg">Subject</label>
                 <input type="text" id="subject" name="subject" required
-                    class="w-full px-3 py-2 border-2 bg-[#CEDD71] border-black rounded-md"/>
+                    class="w-full px-3 py-2 border-2 bg-accent border-black rounded-md"/>
             </div>
 
             <!-- Message Field -->
             <div class="mb-6">
                 <label for="message" class="block mb-1 lg:text-lg">Your Message (Optional)</label>
                 <textarea id="message" name="message" rows="4" required
-                        class="w-full px-3 py-2 border-2 bg-[#CEDD71] border-black rounded-md"></textarea>
+                        class="w-full px-3 py-2 border-2 bg-accent border-black rounded-md"></textarea>
             </div>
 
             <!-- Submit Button -->

@@ -2,7 +2,7 @@
 <template>
   <div class="w-full flex flex-wrap gap-6 justify-center pt-10 pb-10">
     <div
-      class="w-[250px] h-[200px] rounded-lg py-4 border-2 border-white flex justify-between items-center flex-col text-white transition-transform transition-shadow duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:border-[#CEDD71]"
+      class="w-[250px] h-[200px] rounded-lg py-4 border-2 border-white flex justify-between items-center flex-col text-white transition-transform transition-shadow duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:border-accent"
     >
       <div class="text-center">
         <p>Graceville International</p>
@@ -13,7 +13,7 @@
       <p>0916 706 0239</p>
     </div>
     <div
-      class="w-[250px] h-[200px] rounded-lg py-4 border-2 border-white flex justify-between items-center flex-col text-white transition-transform transition-shadow duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:border-[#CEDD71]"
+      class="w-[250px] h-[200px] rounded-lg py-4 border-2 border-white flex justify-between items-center flex-col text-white transition-transform transition-shadow duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:border-accent"
     >
       <div class="text-center">
         <p>Graceville International</p>
@@ -24,7 +24,7 @@
       <p>0916 694 2397</p>
     </div>
     <div
-      class="w-[250px] h-[200px] rounded-lg py-4 border-2 border-white flex justify-between items-center flex-col text-white transition-transform transition-shadow duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:border-[#CEDD71]"
+      class="w-[250px] h-[200px] rounded-lg py-4 border-2 border-white flex justify-between items-center flex-col text-white transition-transform transition-shadow duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:border-accent"
     >
       <div class="text-center">
         <p>Graceville High School</p>
@@ -35,7 +35,7 @@
       <p>08027877404 <br />08020642311</p>
     </div>
     <div
-      class="w-[250px] h-[200px] rounded-lg py-4 border-2 border-white flex justify-between items-center flex-col text-white transition-transform transition-shadow duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:border-[#CEDD71]"
+      class="w-[250px] h-[200px] rounded-lg py-4 border-2 border-white flex justify-between items-center flex-col text-white transition-transform transition-shadow duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:border-accent"
     >
       <div class="text-center">
         <p>Graceville High School</p>
@@ -46,7 +46,7 @@
       <p>08027877404 <br />08020642311</p>
     </div>
     <div
-      class="w-[250px] h-[200px] rounded-lg py-4 border-2 border-white flex justify-between items-center flex-col text-white transition-transform transition-shadow duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:border-[#CEDD71]"
+      class="w-[250px] h-[200px] rounded-lg py-4 border-2 border-white flex justify-between items-center flex-col text-white transition-transform transition-shadow duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:border-accent"
     >
       <div class="text-center">
         <p>Graceville Bonsaac</p>

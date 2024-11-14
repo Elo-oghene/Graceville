@@ -18,10 +18,10 @@ export default {
             </div>
             <div class="text-center text-sm sm:text-base">ENTER LOGIN DETAILS TO CHECK ON STUDENT</div>
             <div class="w-full flex flex-col gap-4">
-                <input type="text" placeholder="STUDENT'S ID" class="w-full border-2 px-2 text-sm border-[#224E05] py-3 sm:py-4">
-                <input type="text" placeholder="STUDENT'S ID" class="w-full border-2 px-2 text-sm border-[#224E05] py-3 sm:py-4">
+                <input type="text" placeholder="STUDENT'S ID" class="w-full border-2 px-2 text-sm border-secondary py-3 sm:py-4">
+                <input type="text" placeholder="STUDENT'S ID" class="w-full border-2 px-2 text-sm border-secondary py-3 sm:py-4">
             </div>
-            <button type="submit" class="w-full px-4 py-3 sm:py-4 bg-[#224E05] text-sm text-white rounded-sm shadow-md hover:bg-[#1b3a04] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">
+            <button type="submit" class="w-full px-4 py-3 sm:py-4 bg-secondary text-sm text-white rounded-sm shadow-md hover:bg-[#1b3a04] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">
                 LOGIN
             </button>
         </form>

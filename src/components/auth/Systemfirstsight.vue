@@ -9,7 +9,7 @@
 <template>
     <section class="w-full"> 
         <div class="w-full pt-16 flex mt-6 px-4 justify-center items-center">
-            <div class="w-full lg:w-1/2 h-14 bg-[#D9D9D9] flex items-center px-4 lg:px-8 justify-between  cursor-pointer" @click="toggleSchools">
+            <div class="w-full lg:w-1/2 h-14 bg-primary flex items-center px-4 lg:px-8 justify-between  cursor-pointer" @click="toggleSchools">
                     <span class="text-sm lg:text-lg">Schools</span>
                     <i :class="isSchoolsOpen ? 'bx bx-chevron-up' : 'bx bx-chevron-down'" class="text-[30px]"></i> <!-- Icon for toggling -->
             </div>
@@ -26,10 +26,10 @@
         </ul>
     </section>
     <section>
-        <div class="w-full px-4 md:px-8 bottom-0 absolute lg:px-16 py-4 border-t-2 border-t-[#CEDD71] flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+        <div class="w-full px-4 md:px-8 bottom-0 absolute lg:px-16 py-4 border-t-2 border-t-accent flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
             <div class="flex items-center gap-2">
                 <img class="w-12 lg:w-16 object-contain" src="../../assets/images/GR GENERAL LOGO 1.png" alt="logo" />
-                <p class="text-[#CEDD71] font-bold text-xs md:text-sm lg:font-semibold">Graceville International<br/> Schools</p>
+                <p class="text-accent font-bold text-xs md:text-sm lg:font-semibold">Graceville International<br/> Schools</p>
             </div>
             <div class="text-xs md:text-sm lg:text-base">
                 Copyright © 2022 Graceville International School, Asaba. All rights reserved.

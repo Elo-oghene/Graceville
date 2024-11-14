@@ -32,7 +32,7 @@ defineOptions({
     >
       <div class="w-full lg:w-1/2 flex flex-col py-10 justify-center gap-4">
         <div class="flex flex-col gap-2">
-          <p class="text-[#CEDD71] text-sm">WHY CHOOSE US</p>
+          <p class="text-accent text-sm">WHY CHOOSE US</p>
           <h4 class="text-white text-[20px] lg:text-[40px] font-cormorant">Study to Excel</h4>
           <p class="text-white text-sm lg:text-lg">
             At Graceville Schools, we employ broad based, Nigerian and British
@@ -43,7 +43,7 @@ defineOptions({
           </p>
         </div>
         <div class="flex flex-col gap-3">
-          <p class="text-[#CEDD71] text-sm">OUR CORE VALUES</p>
+          <p class="text-accent text-sm">OUR CORE VALUES</p>
           <div class="flex  text-sm lg:text-lg flex-col text-white gap-1">
             <p>Discipline</p>
             <p>Determination</p>
@@ -59,7 +59,7 @@ defineOptions({
             alt=""
           />
         </div>
-        <div class="text-[#CEDD71] text-[16px] lg:text-[20px] tracking-widest">
+        <div class="text-accent text-[16px] lg:text-[20px] tracking-widest">
           Graceville High school
         </div>
       </div>
@@ -72,11 +72,11 @@ defineOptions({
             alt=""
           />
         </div>
-        <div class="text-[#CEDD71] text-[16px] text-center pb-4 lg:text-[20px] tracking-widest">
+        <div class="text-accent text-[16px] text-center pb-4 lg:text-[20px] tracking-widest">
           Tennis Court
         </div>
     </section>
-    <section class="w-full flex flex-col lg:flex-row bg-[#224E05] px-4 gap-4 lg:px-8">
+    <section class="w-full flex flex-col lg:flex-row bg-secondary px-4 gap-4 lg:px-8">
         <div class="w-full flex flex-col justify-center gap-4 lg:w-1/2">
             <p class="text-sm text-white">WE ARE DEDICATED TO GREATNESS</p>
             <h2 class="font-cormorant text-[30px] text-white">Mission Statement</h2>
@@ -88,7 +88,7 @@ defineOptions({
                 <li>Preparing each child to be the best leader in his her chosen ambition</li>
                 <li></li>
             </ol>
-            <div class="w-full lg:w-[80%] bg-[#CEDD71] h-[2px]"></div>
+            <div class="w-full lg:w-[80%] bg-accent h-[2px]"></div>
             <div>
                 <h2 class="font-cormorant text-[30px] text-white">Vision Statement</h2>
                 <p class="text-sm lg:text-sm text-white">Our vision is to become a center of excellence that delivers world class standard educatuon to youing minds, and to raise
@@ -104,13 +104,13 @@ defineOptions({
                     alt=""
                 />
             </div>
-            <div class="text-[#CEDD71] text-sm text-center lg:text-lg tracking-widest">
+            <div class="text-accent text-sm text-center lg:text-lg tracking-widest">
                 Graceville Preschool/ Primary School, Summit Road., Asaba.
             </div>
         </div>
     </section>
 
-    <section class="w-full flex flex-col lg:flex-row gap-4  px-4 lg:px-8 bg-[#224E05]">
+    <section class="w-full flex flex-col lg:flex-row gap-4  px-4 lg:px-8 bg-secondary">
         <div class="w-full lg:w-1/2 flex flex-col">
             <div class="w-full h-full">
                 <img
@@ -119,7 +119,7 @@ defineOptions({
                     alt=""
                 />
             </div>
-            <div class="text-[#CEDD71] text-sm text-center lg:text-lg tracking-widest">
+            <div class="text-accent text-sm text-center lg:text-lg tracking-widest">
                 Graceville Preschool/Primary School, Jesus Saves, Asaba.
             </div>
         </div>
@@ -131,7 +131,7 @@ defineOptions({
                     alt=""
                 />
             </div>
-            <div class="text-[#CEDD71] text-sm text-center lg:text-lg tracking-widest">
+            <div class="text-accent text-sm text-center lg:text-lg tracking-widest">
                 Graceville Preschool/ Primary School, Summit Road., Asaba.
             </div>
         </div>
@@ -148,7 +148,7 @@ defineOptions({
                 <button class="px-4 py-3 bg-black text-sm text-white rounded-sm shadow-md tracking-wider hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">CLICK HERE</button>
             </div>
         </section>
-        <section class="w-full bg-[#224E05] pt-10">
+        <section class="w-full bg-secondary pt-10">
             <div class="text-[24px] lg:text-[40px] text-white font-cormorant text-center">Visit Our Schools</div>
             <Adress/>
         </section>

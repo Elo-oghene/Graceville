@@ -9,6 +9,8 @@ import Login from '../components/auth/Login.vue'
 import Studentsystem from '../components/auth/Studentsystem.vue'
 import Systemfirstsight from '../components/auth/Systemfirstsight.vue'
 import Sectionterm from '../components/auth/Sectionterm.vue'
+import WaecNeco from '@/components/WaecNeco.vue';
+// import Receipt from '@/App.vue'
 // import About from '../components/landing/About.vue'; // Example component
 // import Admission from '../components/landing/Admission.vue'; // Example component
 
@@ -22,6 +24,8 @@ const routes = [
   { path: '/studentsystem', component: Studentsystem },
   { path: '/systemfirstsight', component: Systemfirstsight},
   { path: '/sectionterm', component: Sectionterm},
+  { path: '/waecneco', component: WaecNeco},
+  // { path: '/receipt', component: Receipt},
   // { path: '/admission', component: Admission },
   // Add more routes as needed
 ];

@@ -41,7 +41,7 @@ defineOptions({
                     Admission into Graceville International Schools (Jesus Saves) and Graceville International Schools (Summit Road) is open all year round. However, children will be tested and age considered in determining the appropriate class for admission.
                 </p>
                 <div class="flex flex-col gap-2">
-                    <div class="text-[#CEDD71] text-center md:text-left">HOW TO REGISTER</div>
+                    <div class="text-accent text-center md:text-left">HOW TO REGISTER</div>
                     <ul class="text-white text-sm px-4 flex flex-col gap-2 list-disc list-inside">
                         <li>Collect a registration form</li>
                         <li>Return completed form with two passport photographs</li>
@@ -49,7 +49,7 @@ defineOptions({
                         <li>Photocopy of birth certificate</li>
                         <li>Photocopy of parents/guardians ID card</li>
                     </ul>
-                    <button class="self-start px-4 py-3 bg-[#CEDD71] text-sm rounded-sm shadow-md hover:bg-[#b0cc63] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">
+                    <button class="self-start px-4 py-3 bg-accent text-sm rounded-sm shadow-md hover:bg-[#b0cc63] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">
                         CONTACT US
                     </button>
                 </div>
@@ -65,7 +65,7 @@ defineOptions({
                     Graceville College Enrollment into Graceville College for the academic session commences with theentrance examination that usually holds early in May of the proceeding session.Separate examination dates are arranged for students wishing to transfer into JS2 andSS2 (please contact the school)Admission into Graceville International Schools (Jesus Saves) and Graceville International Schools (Summit Road) is open all year round. However, children will be tested and age considered in determining the appropriate class for admission.
                 </p>
                 <div class="flex flex-col gap-2">
-                    <div class="text-[#CEDD71] text-center md:text-left">HOW TO REGISTER</div>
+                    <div class="text-accent text-center md:text-left">HOW TO REGISTER</div>
                     <ul class="text-white text-sm px-4 flex flex-col gap-2 list-disc list-inside">
                         <li>Obtain the admission pack from the admin</li>
                         <li>Complete the admission form and return by the date stated with the requirements</li>
@@ -73,7 +73,7 @@ defineOptions({
                         <li>Successful candidates will be notified thereafter</li>
                         <li>Pay the acceptable fee (non-refundable)</li>
                     </ul>
-                    <button class="self-start px-4 py-3 bg-[#CEDD71] text-sm rounded-sm shadow-md hover:bg-[#b0cc63] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">
+                    <button class="self-start px-4 py-3 bg-accent text-sm rounded-sm shadow-md hover:bg-[#b0cc63] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">
                             DOWNLOAD THE REGISTRATION FORM
                     </button>
                 </div>
@@ -99,7 +99,7 @@ defineOptions({
                     Graceville CollegeEnrollment into Graceville College for the academic session commences with theentrance examination that usually holds early in May of the proceeding session.Separate examination dates are arranged for students wishing to transfer into JS2 andSS2 (please contact the school)Admission into Graceville International Schools (Jesus Saves) and Graceville International Schools (Summit Road) is open all year round. However, children will be tested and age considered in determining the appropriate class for admission.
                 </p>
                 <div class="flex flex-col gap-2">
-                    <div class="text-[#CEDD71] text-center md:text-left">HOW TO REGISTER</div>
+                    <div class="text-accent text-center md:text-left">HOW TO REGISTER</div>
                     <ul class="text-white text-sm px-4 flex flex-col gap-2 list-disc list-inside">
                         <li>Obtain the admission pack from the admin</li>
                         <li>Complete the admission form and return by the date stated with the requirements</li>
@@ -107,7 +107,7 @@ defineOptions({
                         <li>Successful candidates will be notified thereafter</li>
                         <li>Pay the acceptable fee (non-refundable)</li>
                     </ul>
-                    <button class="self-start px-4 py-3 bg-[#CEDD71] text-sm rounded-sm shadow-md hover:bg-[#b0cc63] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">
+                    <button class="self-start px-4 py-3 bg-accent text-sm rounded-sm shadow-md hover:bg-[#b0cc63] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">
                             DOWNLOAD THE REGISTRATION FORM
                     </button>
                 </div>
@@ -129,15 +129,15 @@ defineOptions({
                 </p>
                 <div class="flex flex-col gap-2">
                     <div class="text-white text-sm text-center md:text-left">Entry Requirement: Five (5) Credits at WAEC/NECO 0-Level.</div>
-                    <div class="text-[#CEDD71] text-center md:text-left">HOW TO REGISTER</div>
+                    <div class="text-accent text-center md:text-left">HOW TO REGISTER</div>
                     <div class="text-white text-sm">Visit our centre at Graceville College, 22 Summit Road, Asaba, Delta State, Nigeria.</div>
-                    <button class="self-start px-4 py-3 bg-[#CEDD71] text-sm rounded-sm shadow-md hover:bg-[#b0cc63] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">
+                    <button class="self-start px-4 py-3 bg-accent text-sm rounded-sm shadow-md hover:bg-[#b0cc63] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">
                             CONTACT US NOW
                     </button>
                 </div>
             </div>
         </section>
-        <section class="w-full bg-[#224E05]">
+        <section class="w-full bg-secondary">
             <Adress/>
         </section>
         <section>

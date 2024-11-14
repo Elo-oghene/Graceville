@@ -17,7 +17,7 @@
                     v-for="(button, index) in buttons"
                     :key="index"
                     @click="button.onClick"
-                    class="self-start px-4 py-3 bg-[#CEDD71] text-sm rounded-sm shadow-md hover:bg-[#b0cc63] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out"
+                    class="self-start px-4 py-3 bg-accent text-sm rounded-sm shadow-md hover:bg-[#b0cc63] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out"
                 >
                     {{ button.label }}
                 </button>
