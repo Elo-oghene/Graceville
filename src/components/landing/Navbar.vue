@@ -24,12 +24,18 @@ const subMenuOpen = ref(false);
             </div>
 
             <div class="flex items-center gap-2">
+                
                 <a href="#" class="btn w-9 h-9 rounded-full flex items-center justify-center bg-accent">
                     <i class="bx bxl-facebook-circle text-xl"></i>
                 </a>
                 <a href="#" class="btn w-9 h-9 rounded-full flex items-center justify-center bg-accent">
                     <i class='bx bxl-youtube text-xl'></i>
                 </a>
+                <RouterLink to="/login">
+                    <button class="self-start px-4 py-3 bg-accent text-sm rounded-sm shadow-md hover:bg-[#b0cc63] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">
+                            LOGIN
+                    </button>
+                </RouterLink>
             </div>
         </div>
 

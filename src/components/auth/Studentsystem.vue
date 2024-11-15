@@ -1,45 +1,47 @@
 <script setup>
 import { ref } from 'vue';
-const menuOpen = ref(false); // State variable to manage the nested list visibility
-const attendanceOpen = ref(false); // State variable to manage the nested list visibility
-const timetableOpen = ref(false); // State variable to manage the nested list visibility
-const schoolFeesOpen = ref(false); // State variable to manage the nested list visibility
-const healthUpdateOpen = ref(false); // State variable to manage the nested list visibility
-const termScheduleOpen = ref(false); // State variable to manage the nested list visibility
-const testExamOpen = ref(false); // State variable to manage the nested list visibility
-const testResultOpen = ref(false); // State variable to manage the nested list visibility
-const backgroundColor = ref('bg-white'); // Initial background color
-const examSelected = ref(false); // Initial background color
+const menuOpen = ref(false); 
+const attendanceOpen = ref(false); 
+const timetableOpen = ref(false); 
+const schoolFeesOpen = ref(false); 
+const healthUpdateOpen = ref(false); 
+const termScheduleOpen = ref(false); 
+const testExamOpen = ref(false); 
+const testResultOpen = ref(false); 
+const backgroundColor = ref('bg-white');
+const examSelected = ref(false); 
+const testSelected = ref(false); 
+const examResult = ref(false); 
+const firstCat = ref(false); 
 const selectedYear = '';
 
 const togglemenuOpen = () => {
-    menuOpen.value = !menuOpen.value; // Toggle the visibility
+    menuOpen.value = !menuOpen.value; 
     console.log("open")
 };
 const toggleAttendance = () => {
-    attendanceOpen.value = !attendanceOpen.value; // Toggle the visibility
+    attendanceOpen.value = !attendanceOpen.value; 
 };
 const toggleTimetable = () => {
-    timetableOpen.value = !timetableOpen.value; // Toggle the visibility
+    timetableOpen.value = !timetableOpen.value; 
 };
 const toggleSchoolfees = () => {
-    schoolFeesOpen.value = !schoolFeesOpen.value; // Toggle the visibility
+    schoolFeesOpen.value = !schoolFeesOpen.value; 
 };
 const toggleHealthUpdate = () => {
-    healthUpdateOpen.value = !healthUpdateOpen.value; // Toggle the visibility
+    healthUpdateOpen.value = !healthUpdateOpen.value; 
 };
 const toggleTermSchedule = () => {
-    termScheduleOpen.value = !termScheduleOpen.value; // Toggle the visibility
+    termScheduleOpen.value = !termScheduleOpen.value; 
 };
 const toggleTestExam = () => {
-    testExamOpen.value = !testExamOpen.value; // Toggle the visibility
+    testExamOpen.value = !testExamOpen.value; 
 };
 const toggleTestResult = () => {
-    testResultOpen.value = !testResultOpen.value; // Toggle the visibility
+    testResultOpen.value = !testResultOpen.value; 
 };
 
 const changeColor = () => {
-    // Toggle between two colors on click
     backgroundColor.value = backgroundColor.value === 'bg-white' ? 'bg-green-500' : 'bg-white'; // Change this to your desired colors
     console.log("cghangecolor")
 };
@@ -77,15 +79,15 @@ const changeColor = () => {
             <div class="w-full flex gap-2  justify-between">
                 <div class="w-full lg:w-[80%] flex flex-col gap-4 h-full">
                     <div class="w-full  flex flex-col lg:flex-row">
-                        <label class="w-full lg:w-1/5 flex items-center text-sm lg:text-[16px]">STUDENTS ID</label>
+                        <label class="w-full lg:w-1/5 flex items-center text-sm lg:text-[16px]">STUDENTS ID:</label>
                         <div  class="w-full lg:w-4/5 h-[50px] border-2 border-secondary px-4 flex items-center bg-[#F5F9DA]">12345RTYZ</div>
                     </div>
                     <div class="w-full flex flex-col lg:flex-row">
-                        <label class="w-full lg:w-1/5 flex items-center text-sm lg:text-[16px]">FIRSTNAME</label>
+                        <label class="w-full lg:w-1/5 flex items-center text-sm lg:text-[16px]">FIRSTNAME:</label>
                         <div  class="w-full lg:w-4/5 h-[50px] border-2 border-secondary px-4 flex items-center bg-[#F5F9DA]">Christopher</div>
                     </div>
                     <div class="w-full  flex flex-col lg:flex-row">
-                        <label class="w-full lg:w-1/5 flex items-center text-sm lg:text-[16px] ">SURNAME</label>
+                        <label class="w-full lg:w-1/5 flex items-center text-sm lg:text-[16px] ">SURNAME:</label>
                         <div  class="w-full lg:w-4/5 h-[50px] border-2 border-secondary px-4 flex items-center bg-[#F5F9DA]">fghvbjnkml,;.</div>
                     </div>
                 </div>
@@ -96,23 +98,23 @@ const changeColor = () => {
 
             <div class="w-full h-[400px] flex flex-col gap-3">
                 <div class="w-full flex flex-col lg:flex-row">
-                    <label class="w-full lg:w-[16%] flex items-center text-sm lg:text-[16px]">OTHER NAMES</label>
+                    <label class="w-full lg:w-[16%] flex items-center text-sm lg:text-[16px]">OTHER NAMES:</label>
                     <div  class="w-full lg:w-[84%] h-[50px] border-2 border-secondary px-4 flex items-center bg-[#F5F9DA]">fghvbjnkml,;.</div>
                 </div>
                 <div class="w-full flex flex-col lg:flex-row">
-                    <label class="w-full lg:w-[16%] flex items-center text-sm lg:text-[16px]">DATE OF BIRTH</label>
+                    <label class="w-full lg:w-[16%] flex items-center text-sm lg:text-[16px]">DATE OF BIRTH:</label>
                     <div  class="w-full lg:w-[84%] h-[50px] border-2 border-secondary px-4 flex items-center bg-[#F5F9DA]">fghvbjnkml,;.</div>
                 </div>
                 <div class="w-full flex flex-col lg:flex-row">
-                    <label class="w-full lg:w-[16%] flex items-center text-sm lg:text-[16px]">AGE</label>
+                    <label class="w-full lg:w-[16%] flex items-center text-sm lg:text-[16px]">AGE:</label>
                     <div  class="w-full lg:w-[84%] h-[50px] border-2 border-secondary px-4 flex items-center bg-[#F5F9DA]">fghvbjnkml,;.</div>
                 </div>
                 <div class="w-full  flex flex-col lg:flex-row">
-                    <label class="w-full lg:w-[16%] flex items-center text-sm lg:text-[16px]">GENDER</label>
+                    <label class="w-full lg:w-[16%] flex items-center text-sm lg:text-[16px]">GENDER:</label>
                     <div  class="w-full lg:w-[84%] h-[50px] border-2 px-4 border-secondary bg-[#F5F9DA]">fghvbjnkml,;.</div>
                 </div>
                 <div class="w-full  flex flex-col lg:flex-row">
-                    <label class="w-full lg:w-[16%] flex items-center text-sm lg:text-[16px]">PARENTS PHONE NO</label>
+                    <label class="w-full lg:w-[16%] flex items-center text-sm lg:text-[16px]">PARENTS PHONE NO:</label>
                     <div  class="w-full lg:w-[84%] h-[50px] border-2 border-secondary px-4 flex items-center bg-[#F5F9DA]">fghvbjnkml,;.</div>
                 </div>
             </div>
@@ -158,9 +160,11 @@ const changeColor = () => {
                         DOWNLOAD PREVIOUS RECEIPTS
                     </button>
                     <img src="../../assets/images/schoolfees.png" class="w-full" alt="">
-                    <button class="self- start px-4 py-3 bg-accent text-sm rounded-sm shadow-md hover:bg-[#b0cc63] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">
-                        DOWNLOAD RECEIPT
-                    </button>
+                    <div class="flex justify-end">
+                        <button class="self- start px-4 py-3 bg-accent text-sm rounded-sm shadow-md hover:bg-[#b0cc63] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">
+                            DOWNLOAD RECEIPT
+                        </button>
+                    </div>
                 </div>
                 <li class="w-full h-14 bg-secondary flex items-center px-4 lg:px-8 justify-between cursor-pointer" @click="toggleHealthUpdate">
                     <span class="px-4 lg:px-8 text-sm lg:text-[16px] text-white">HEALTHUPDATE</span>
@@ -197,55 +201,85 @@ const changeColor = () => {
                 </div>
                 <li class="w-full h-14 bg-secondary flex items-center px-4 lg:px-8 justify-between cursor-pointer" @click="toggleTestExam">
                     <span class="px-4 lg:px-8 text-sm lg:text-[16px] text-white">TEST AND EXAM</span>
-                    <i :class="testExamOpen ? 'bx bx-chevron-up' : 'bx bx-chevron-down'" class="text-white text-[30px]"></i> <!-- Icon for toggling -->
+                    <i :class="testExamOpen ? 'bx bx-chevron-up' : 'bx bx-chevron-down'" class="text-white text-[30px]"></i> 
                 </li>
                 <div v-if="testExamOpen"> 
-                    <div class="w-full flex flex-col lg:flex-row lg:justify-center gap-4 px-4 lg:gap-16">
-                        <div class="px-4 py-1 rounded-sm bg-accent">Test Result</div>
-                        <div class="px-4 py-1 rounded-sm bg-accent" @click="examSelected = !examSelected">Exam result</div>
+                    <div class="w-full flex flex-col lg:flex-row lg:justify-center gap-4 pt-10 lg:gap-16">
+                        <div class="px-4 py-1 rounded-sm bg-accent cursor-pointer"  @click="testSelected = !testSelected">Test Result</div>
+                        <div class="px-4 py-1 rounded-sm bg-accent cursor-pointer" @click="examSelected = !examSelected">Exam result</div>
                     </div>
-                    <div v-if="examSelected" class="w-full flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-16 pt-6">
-                        <select class="select-custom outline-none">
+                    <div v-if="testSelected" class="w-full flex flex-col items-center lg:pt-10 justify-center gap-4">
+                        <button 
+                            class="px-8 py-3 bg-accent text-sm rounded-sm shadow-md hover:bg-[#b0cc63] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out" @click="firstCat = !firstCat">
+                            1st CAT
+                        </button>
+                        <div v-if="firstCat">
+                            <img src="../../assets/images/test.png" class="w-full" alt="images goes here">
+                            <div class="flex justify-end pt-4">
+                                <button 
+                                    class="px-4 py-3 bg-accent text-sm rounded-sm shadow-md hover:bg-[#b0cc63] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">
+                                    DOWNLOAD RESULT
+                                </button>
+                            </div>
+                        </div>
+                        <button 
+                            class="px-8 py-3 bg-accent text-sm rounded-sm shadow-md hover:bg-[#b0cc63] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">
+                            2nd CAT
+                        </button>
+                        
+                    </div>
+                    <div v-if="examSelected" class="w-full flex flex-col lg:flex-row items-center lg:pt-10 justify-center gap-4 lg:gap-16 pt-6">
+                        <select class="select-custom text-sm outline-none">
                             <option value="">Year</option>
                             <option value="">Year1</option>
                             <option value="">Year2</option>
                             <option value="">Year3</option>
+                            <option value="">Year4</option>
+                            <option value="">Year5</option>
                         </select>
                         <select class="select-custom">
                             <option value="">Section</option>
-                            <option value="">gbnm</option>
-                            <option value="">gbnm</option>
-                            <option value="">gbnm</option>
+                            <option value="">2022/2023</option>
+                            <option value="">2023/2024</option>
                         </select>
                         <select class="select-custom">
                             <option value="">Term</option>
-                            <option value="">gbnm</option>
-                            <option value="">gbnm</option>
-                            <option value="">gbnm</option>
+                            <option value="">1st Term</option>
+                            <option value="">2nd Term</option>
+                            <option value="">3rd Term</option>
                         </select>
                     </div>
                 </div>
-                <li class="w-full h-14 bg-secondary flex items-center px-4 lg:px-8 text-sm lg:text-[16px] text-white">CHECK FINAL RESULT</li>
+                <li @click="examResult = !examResult" class="w-full h-14 bg-secondary flex items-center justify-center px-4 lg:px-8 text-sm lg:text-[16px] text-white">CHECK FINAL RESULT</li>
+                <div v-if="examResult">
+                    <img src="../../assets/images/examresult.png" class="w-full" alt="images goes here">
+                    <div class="flex justify-end pt-4">
+                        <button 
+                            class="px-4 py-3 bg-accent text-sm rounded-sm shadow-md hover:bg-[#b0cc63] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">
+                            DOWNLOAD RESULT
+                        </button>
+                    </div>
+                </div>
             </ul>
         </section>
     </section>
 </template>
 <style>
 .select-custom {
-    padding: 10px 10px; /* Padding inside the select box */
-    background-color: #D9D9D9; /* Tailwind Gray-500 */
-    color: #121212; /* Text color */
-    border-radius: 8px; /* Rounded corners */
-    cursor: pointer; /* Change cursor to pointer */
-    width: 200px; /* Width for consistent sizing */
+    padding: 10px 10px;
+    background-color: #D9D9D9; 
+    color: #121212;
+    border-radius: 8px; 
+    cursor: pointer;
+    width: 200px;
     font-size: 16px;
-    border: none; /* Remove default border */
+    border: none; 
     outline: none;
 }
 
 .select-custom option {
-    background-color: #4B5563; /* Option background color */
-    color: #FFF; /* Option text color */
+    background-color: #4B5563;
+    color: #FFF; 
     border:none;
 }
 
